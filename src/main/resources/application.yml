@@ -1,0 +1,25 @@
+logging:
+  level:
+    ROOT: DEBUG
+    com.dnb.frs.services: DEBUG
+    com.dnb.frs.document: DEBUG
+
+spring:
+  #config:
+    #active:
+      #on-profile: dev
+      #include:
+        #- swagger
+  application:
+    name: demo-service
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            clientId:
+            clientSecret: 15c826e57586764d37e1d4c75be8986b7a284e66
+
+# Application server port
+server:
+  port: 9098
